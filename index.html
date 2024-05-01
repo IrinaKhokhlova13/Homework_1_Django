@@ -303,27 +303,44 @@
                     </form>
                 </div>
             </div>
-            <p class="d-inline-flex gap-1">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Как купить?
-                </button>
-            </p>
-            <p class="d-inline-flex gap-1">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <p class="d-inline-flex gap-2">
+                <a class="btn btn-primary btn btn-primary col-12" data-bs-toggle="collapse"
+                   href="#multiCollapseExample1"
+                   role="button"
+                   aria-expanded="false" aria-controls="multiCollapseExample1">Как купить?</a>
+                <button class="btn btn-primary btn btn-primary col-12" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">
                     Как доставить?
                 </button>
-            </p>
-            <p class="d-inline-flex gap-1">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Какая гарантия?
+                <button class="btn btn-primary btn btn-primary col-12" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#multiCollapseExample3"
+                        aria-expanded="false" aria-controls="multiCollapseExample3">Какая гарантия?
                 </button>
             </p>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                    Один ответ на все вопросы ), если так можно
+            <div class="row">
+                <div class="col-3">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Для того чтобы купить, нажмите зеленую кнопку.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            Напишите куда надо доставить и мы сделаем это за несколько дней.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                            Гарантия распространяется на все товары.
+                        </div>
+                    </div>
                 </div>
             </div>
 
